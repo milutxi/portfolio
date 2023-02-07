@@ -1,0 +1,187 @@
+:root {
+    --dark: #343134;
+    --blue: rgb(128, 155, 192);
+    --otherBlue: rgb(30, 105, 209);
+    --white:  #F8F9FB;
+}
+
+html {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/stones.jpg);
+    background-size: contain;
+    margin: 0;
+    min-height: 100%;
+}
+
+.container {
+    background-color: var(--dark);
+    margin: 30px;
+    position: relative;
+}
+
+header {
+    background-color: var(--dark);
+    display: flex;
+    padding: 10px;
+}
+
+.my-data {
+    color: var(--blue);
+    font-family: caviar, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 12px 0 0 12px;
+}
+
+.navbar {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: caviar, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    width: 100%; 
+}
+
+.nav-item-stay-active{
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 17px;
+    text-decoration: none;
+}
+
+.submenu-item-stay-active {
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.nav-item {
+    color: var(--blue);
+    padding: 18px;
+    position: relative;
+    text-decoration: none;
+}
+
+.active {
+    box-shadow: 0 0 10px#A4ACB8ff;
+    border-radius: 50% 0;
+    color: var(--white);
+    transition: 2s;
+}
+
+.submenu {
+    display: none;
+    left: 0px;
+    margin: 18px 0;
+    padding: 13px;
+    position: absolute;
+    top: 35px;
+}
+
+.submenu-item {
+    color: var(--blue);
+    display: flex;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+i {
+    padding: 0 2px;
+}
+
+.mobile, 
+.mobile-nav {
+    display: none;
+}
+
+main {
+    padding: 12px;
+}
+
+footer {
+    bottom: 10px;
+    color: var(--blue);
+    font-family: caviar, 'Times New Roman', Times, serif;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+   
+    header {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .navbar {
+		display: none;
+    }
+    .mo-wrap {
+        display: none;
+    }
+
+   .mobile-nav {
+    background-color: var(--white);
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    left: -143px;
+    margin: 0;
+    padding: 6px;
+    position: relative;
+    top: -10px;
+   }
+
+    .mobile {
+        align-items: center;
+        display: flex;
+        left: 30px;
+    }
+
+    i {
+        color: var(--blue);
+        padding-right: 12px;
+    }
+
+    .navigation-item {
+        color: var(--blue);
+        font-size: 24px;
+        padding: 12px;
+        text-decoration: none;
+        width: 200px; 
+    }
+
+    #close {
+        text-align: end;
+        font-size: 43px;
+    }
+
+    #hamburger {
+        font-size: 24px;
+    }
+
+    .mobileActive {
+        background-color: var(--blue);
+        color: var(--white);
+    }
+
+    .moSubmenuItem {
+        background-color: var(--dark);
+        display: none;
+        color: var(--white);
+    }
+    
+ }
+
+

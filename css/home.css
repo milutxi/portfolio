@@ -1,0 +1,76 @@
+:root {
+    --dark: #343134;
+    --blue: rgb(128, 155, 192);
+    --otherBlue: rgb(30, 105, 209);
+    --white:  #F8F9FB;
+}
+
+.my-name {
+    color: var(--white);  
+    font-family: blackjack, Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--white);
+    font-family: caviar, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+main {
+    position: relative;
+}
+
+.my-name {
+    font-size: 54px;
+    padding-top: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.example {
+    top: 48px;
+}
+
+.sculpture {
+    display: flex;
+    flex-direction: row;
+    margin: 36px 0;
+    padding: 16px;
+    position: relative;
+}
+
+.one {
+    background-color: cadetblue;
+    height: 30px;
+    left: 30px;
+    position: relative;
+    top: 30px;
+    width: 30%;  
+}
+
+.two {
+    background-color: blue;
+    height: 50px;
+    width: 60%;
+}
+
+.three {
+    background-color: aqua;
+    height: 40px;
+    left: -20px;
+    position: relative;
+    top: -10px;
+    width:20%;
+}
+}

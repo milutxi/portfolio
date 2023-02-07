@@ -1,0 +1,115 @@
+.contact-title {
+    color: var(--white);
+    font-family: blackjack, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.formWrap {
+    border: 5px solid rgb(128, 155, 192);
+    border-radius: 10px;
+    display: flex;
+    height: 611px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+.section-left {
+    align-content: space-around;
+    background-color: #F8F9FB;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    font-family: caviar, Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+}
+
+.spiralWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.signature{
+    color:rgb(30, 105, 209);
+    font-family: blackJack, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: 60%;
+}
+
+.section-right {
+    background-color: #F8F9FB;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: 0 20px;
+    width: 50%;
+}
+
+fieldset {
+    background-color: #343134;
+    border-radius: 10px;
+    color: #F8F9FB;
+    font-family: caviar, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 12px;  
+}
+
+legend {
+    color: rgb(128, 155, 192);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.submit {
+    background-color:rgb(30, 105, 209);
+    color: #F8F9FB;
+    font-family: caviar, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 6px;
+}
+
+@media screen and (max-width: 750px) {
+    .contact-title {
+        font-size: 54px;
+    }
+
+    .section-left,
+    .spiralWrapper {
+        display: none;
+    }
+
+    .formWrap {
+        border: none;
+        display: block;
+        height: 100%;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .section-right {
+        background-color: var(--dark);
+        display: block;
+        padding: 0;
+        width: 100%;    
+    }
+}

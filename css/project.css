@@ -1,0 +1,254 @@
+.project-title {
+    color: var(--white);
+    font-family: blackjack, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px;
+}
+
+h3 {
+    color: var(--blue);
+    text-align: center;
+}
+
+p {
+    color: var(--white);
+    font-family: caviar, Arial, Helvetica, sans-serif;
+    padding: 0 48px;
+}
+
+.card-container.Cakes {
+    background-color: var(--white);
+    box-sizing: content-box;
+    flex: 1 0 300px;
+    height: 350px;
+    padding: 32px;
+    perspective: 5000px;
+    width: 600px;
+}
+
+.cardsCakes {
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 100%;
+}
+
+.cardsCakes:hover {
+    transform: rotateY(180deg);
+}
+
+.cardCakes {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; 
+}
+
+.cardCakes.front {
+    background-color: var(--dark);
+    z-index: 20;
+}
+
+.cardCakes.back {
+    background-color: var(--white);
+    transform: rotateY(180deg);
+    z-index: 10;
+}
+
+.cakes {
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+.cakesLast {
+    text-align: end;
+}
+
+.card-container.Game {
+    background-color: var(--white);
+    box-sizing: content-box;
+    flex: 1 0 300px;
+    height: 300px;
+    padding: 32px;
+    perspective: 5000px;
+    width: 300px;
+}
+
+.cardsGame {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.cardsGame:hover {
+    transform: rotateY(180deg);
+}
+
+.cardGame {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.cardGame.front {
+    background-color: var(--dark);
+    z-index: 20;
+}
+
+.cardGame.back {
+    background-color: #e0afa0;
+    transform: rotateY(180deg);
+    z-index: 10;
+}
+
+.game {
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+.gameLast {
+    text-align: end;
+}
+
+.card-containerHangman {
+    background-color: var(--white);
+    box-sizing: content-box;
+    flex: 1 0 400px;
+    height: 500px;
+    padding: 32px;
+    perspective: 5000px;
+    width: 400px;
+}
+
+.cardsHangman {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.cardsHangman:hover {
+    transform: rotateY(180deg);
+}
+
+.cardHangman {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.cardHangman.front {
+    background-color: var(--dark);
+    z-index: 20;
+}
+
+.hangmanLast {
+    text-align: end;
+}
+
+.cardHangman.back {
+    background-color: #e0afa0;
+    transform: rotateY(180deg);
+    z-index: 10;
+}
+
+.hangman {
+    width: 100%;
+    height: 100%;
+}
+
+.card-containerAPI {
+    background-color: var(--white);
+    box-sizing: content-box;
+    flex: 1 0 250px;
+    height: 250px;
+    padding: 32px;
+    perspective: 5000px;
+    width: 700px;
+}
+
+.cardsAPI {
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 100%;
+}
+
+.cardsAPI:hover {
+    transform: rotateY(180deg);
+}
+
+.cardAPI {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.cardAPI.front {
+    background-color: var(--dark);
+    z-index: 20;
+}
+
+.cardAPI.back {
+    background-color: #e0afa0;
+    transform: rotateY(180deg);
+    z-index: 10;
+}
+
+.api {
+    height: 100%;
+    width: 100%;
+}
+
+.apiLast {
+    text-align: end;
+}
+
+@media screen and (max-width: 750px) {
+
+    .project-title {
+        font-size: 54px;
+    }
+    
+    .portfolio {
+        margin: 0;
+    }
+
+    .card-container.Cakes,
+    .card-container.Game,
+    .card-containerHangman,
+    .card-containerAPI {
+        flex: 1 0 200px;
+        height: 200px;
+        padding: 6px;
+        width: 0;
+    }
+
+    p {
+        padding: 0 18px;
+    }
+    
+}
